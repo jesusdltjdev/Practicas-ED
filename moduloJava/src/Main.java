@@ -3,22 +3,23 @@ import java.util.List;
 
 public class Main {
     static void main(String[] args) {
-        List<Integer> numerosPrimos = new ArrayList<>() {};
+        List<Integer> MilistadePrimos = new ArrayList<>() {};
 
-        for (int i = 2; i <= 10000; i++) {
+        for (int i = 2; i <= 3000; i++) {
             boolean isPrimo = true;
-            for (int j = 0; j < numerosPrimos.size(); j++ ) {
-                if (i % numerosPrimos.get(j) == 0) {
+            for (int j = 0; j < MilistadePrimos.size(); j++ ) {
+                if (i % MilistadePrimos.get(j) == 0) {
                     isPrimo = false;
                 }
             }
             if (isPrimo) {
-                numerosPrimos.add(i);
+                MilistadePrimos.add(i);
+                MilistadePrimos.getFirst();
             }
         }
 
-        System.out.println(numerosPrimos);
-        System.out.println(numerosPrimos.size());
+        System.out.println(MilistadePrimos);
+
 
     }
 }
